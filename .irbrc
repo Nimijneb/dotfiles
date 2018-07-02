@@ -33,7 +33,7 @@ def paste
 	`pbpaste`
 end
 
-def uf(email='ben@dronedeploy.com')
+def uf(email='###########')
 	User.find_by_email(email)
 end
 
