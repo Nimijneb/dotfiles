@@ -120,7 +120,7 @@ export MY_BUNDLE_ENV="dev"
  alias la='ls -CFA'                              # all but . and ..
  alias l='ls -CF'                              #
  alias lf='ls -la'														 # full list
- alias cdpr='cd /Users/nbenes/projects'
+ alias cdpr='cd /Users/ben/projects'
  alias cdsm='cdpr; cd servemanager'
  alias smcon='cdsm; script/console'
  alias cdsma='cdpr; cd smadmin'
@@ -151,5 +151,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-export NVM_DIR="/Users/nbenes/.nvm"
+export NVM_DIR="/Users/ben/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

@@ -76,6 +76,6 @@ test -r /sw/bin/init.sh && . /sw/bin/init.sh
 PS1="\$(~/.rvm/bin/rvm-prompt i v g s) $PS1"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
-[[ -s /Users/nbenes/.nvm/nvm.sh ]] && . /Users/nbenes/.nvm/nvm.sh # This loads NVM
+[[ -s /Users/ben/.nvm/nvm.sh ]] && . /Users/ben/.nvm/nvm.sh # This loads NVM
 
-eval "$(/Users/nbenes/projects/scripts/bin/law init -)"
+eval "$(/Users/ben/projects/scripts/bin/law init -)"
