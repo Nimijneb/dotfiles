@@ -1,0 +1,22 @@
+[user]
+	email = ben@dronedeploy.com
+	name = ben-dd
+[core]
+	editor = atom -w
+[color]
+	ui = true
+[core "excludes"]
+	file = /Users/ben/.gitignore_global
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	df = diff
+	dfs = diff --staged
+	logg = log --graph --decorate --oneline --abbrev-commit --all
