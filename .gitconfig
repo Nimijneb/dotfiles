@@ -1,29 +1,22 @@
 [user]
-	name = ##########
-	email = ###########
+	email = ben.vernelson@me.com
+	name = Nimijneb
 [core]
-	editor = vim
-[mergetool "diffmerge"]
-	cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
-	trustExistCode = false
-[mergetool]
-	keepBackup = false
-[diff "diffmerge"]
-[difftool "diffmerge"]
-	cmd = diffmerge $LOCAL $REMOTE
-[diff]
-	tool = diffmerge
-[difftool]
-	prompt = false
-[alias]
-	undeployed = log --pretty=format:\"%h %an: %s\" --abbrev-commit  production/master..master
-[heroku]
-	account = work
-[filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+	editor = atom -w
+[color]
+	ui = true
+[core "excludes"]
+	file = /Users/ben/.gitignore_global
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
 	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	br = branch
+	df = diff
+	dfs = diff --staged
+	logg = log --graph --decorate --oneline --abbrev-commit --all
